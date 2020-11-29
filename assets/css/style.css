@@ -1,0 +1,96 @@
+html * {
+  font-family: "Montserrat", sans-serif;
+}
+table {
+  --table-radius: 7%;
+  min-width: 80vmin;
+  min-height: 35vmax;
+  margin: 50px auto;
+  text-align: center;
+}
+td {
+  padding: 10px 20px;
+  vertical-align: middle;
+  min-width: 10vmax;
+}
+thead {
+  --thead-bg: rgba(6, 21, 57, 1);
+  color: #fff;
+}
+thead td {
+  height: 10vmax;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+thead p {
+  margin: 30px 0 10px 0;
+  font-size: 1.8em;
+}
+tbody td {
+  height: 3vmax;
+}
+tbody tr td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+tfoot td {
+  height: 5vmax;
+  padding: 0;
+}
+thead tr td:first-child {
+  background: #7887ab;
+}
+thead tr td:nth-child(2) {
+  background: #4f628e;
+}
+thead tr td:nth-child(3) {
+  background: #2e4172;
+}
+thead tr td:nth-child(4) {
+  background: #162955;
+}
+thead tr td:last-child {
+  background: #061539;
+}
+/* Сell colors */
+tbody tr:nth-child(even) td:nth-child(odd),
+tbody tr:nth-child(odd) td:nth-child(even),
+tfoot tr:nth-child(odd) td:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+tbody tr:nth-child(odd) td:nth-child(odd),
+tbody tr:nth-child(even) td:nth-child(even),
+tfoot tr:nth-child(odd) td:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.05);
+}
+/* table border-radius */
+thead td:first-child {
+  border-top-left-radius: var(--table-radius);
+}
+thead td:last-child {
+  border-top-right-radius: var(--table-radius);
+}
+tfoot td:first-child {
+  border-bottom-left-radius: var(--table-radius);
+}
+tfoot td:last-child,
+td:last-child button {
+  border-bottom-right-radius: var(--table-radius);
+}
+/* button syles */
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  background: #58f74c;
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
